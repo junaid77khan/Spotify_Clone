@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cont" class="container">
+    <div class="main">
+        <div class="left-main"></div>
+        <div class="right-main">
+            <div class="nav">
+                <div class="left-nav">
+                    <div class="arrow-logo">
+                        <svg class="angle-br" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 leya-dW IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16" data-encore-id="icon"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"/></svg>
+                        <svg class="angle-br" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"     class="Svg-sc-ytk21e-0 leya-dW IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16" data-encore-id="icon"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"/></svg>
+                    </div>
+                    <div id="search-list" class="search-listen">
+                        <svg class="searching" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq search-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"/></svg>
+                        <input class="search-in" type="text" placeholder="What do you want to listen to?">
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <button id="sign-in-btn-1-nav" onclick="sign()" class="btn-1-nav pointer">Sign up</button>
+                    <button id="log-in-btn-1-nav" onclick="login()" class="btn-2-nav pointer">Log in</button>
+                </div>
+            </div>
+            <div id="main-content" class="main-content">
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-sec">
+                    <div class="sec-nav">
+                        <a class="main-head underline" href="#">Focus</a>
+                        <a class="main-anchor underline" href="#">Show all</a>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-card-1">
+                            <div class="collab-play-btn">
+                                <img src="./img1.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Peacefull Piano</h4>
+                            <h5>Peaceful piano to help you slow down, breathe, and relax.</h5>
+                        </div>
+                        <div class="sec-card-2">
+                            <div class="collab-play-btn">
+                                <img src="./img2.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Deep Focus</h4>
+                            <h5>Keep calm and focus with ambient and post-rock music.</h5>
+                        </div>
+                        <div class="sec-card-3">
+                            <div class="collab-play-btn">
+                                <img src="./img3.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Instrumental Study</h4>
+                            <h5>Focus with soft study music in the background.</h5>
+                        </div>
+                        <div class="sec-card-4">
+                            <div class="collab-play-btn">
+                                <img src="./img4.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Workday Lounge</h4>
+                            <h5>Lounge and chill out music for your workday.
+                            </h5>
+                        </div>
+                        <div class="sec-card-5">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-6">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                        <div class="sec-card-7">
+                            <div class="collab-play-btn">
+                                <img src="./img5.jpeg" alt="">
+                                <svg class="play" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                            </div>
+                            <h4>Focus Flow</h4>
+                            <h5>Uptempo instrumental hip hop beats.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content-1" class="main-content-1">
+                <div class="main-content-1-nav">
+                    <h3>Browse all</h3>
+                </div>
+                <div class="main-content-1-main">
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                    <div class="content-card">
+                        <img class="content-card-img" src="./content-card-1.jpeg" alt="">
+                        <h3 class="content-card-head">Podcasts</h3>
+                    </div>
+                </div>
+                <div class="main-content-1-footer-1">
+                    <div class="footer-1-text">
+                        <div class="company">
+                            <div class="bold">Company</div>
+                            <div class="lighter">About</div>
+                            <div class="lighter">Jobs</div>
+                            <div class="lighter">For the record</div>
+                        </div>
+                        <div class="communties">
+                            <div class="bold">Communties</div>
+                            <div class="lighter">For artists</div>
+                            <div class="lighter">Developers</div>
+                            <div class="lighter">Advertising</div>
+                            <div class="lighter">Investors</div>
+                            <div class="lighter">Vendors</div>
+                        </div>
+                        <div class="useful-links">
+                            <div class="bold">Useful links</div>
+                            <div class="lighter">Support</div>
+                            <div class="lighter">Free Mobile App</div>
+                        </div>
+                    </div>
+                    <div class="footer-1-logos">
+                        <svg class="contact-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"/><path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z"/></svg>
+
+                        <svg class="contact-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"/></svg>
+
+                        <svg class="contact-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z"/></svg>
+                    </div>
+                </div>
+                <div class="main-content-1-footer-2">
+                    <h3>© 2023 Spotify AB</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="section1">
+            <div onclick="home()" class="home pointer">
+                <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq home-active-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"/></svg>
+                <h3>Home</h3>
+            </div>
+            <div onclick="search()" class="search pointer">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq search-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"/></svg>
+                <h3>Search</h3>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="sec-2-top">
+                <div class="library pointer">
+                    <svg class="library-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"/></svg>
+                    <h3>Your Library</h3>
+                </div>
+                <div class="add-playlist pointer">
+                    <svg onclick="show()" class="playlist-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"/></svg>
+                    <p id="cont" class="content" >Create playlist or folder</p>
+                    <div id="play-opt" class="playlist-option">
+                        <div class="option">
+                            <svg class="option-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M2 0v2H0v1.5h2v2h1.5v-2h2V2h-2V0H2zm11.5 2.5H8.244A5.482 5.482 0 0 0 7.966 1H15v11.75A2.75 2.75 0 1 1 12.25 10h1.25V2.5zm0 9h-1.25a1.25 1.25 0 1 0 1.25 1.25V11.5zM4 8.107a5.465 5.465 0 0 0 1.5-.593v5.236A2.75 2.75 0 1 1 2.75 10H4V8.107zM4 11.5H2.75A1.25 1.25 0 1 0 4 12.75V11.5z"></path></svg>  
+                            <p>Create a new playlist</p>                      
+                        </div>
+                        <div class="option">
+                            <svg class="option-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M1.75 1A1.75 1.75 0 0 0 0 2.75v11.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0 0 16 14.25v-9.5A1.75 1.75 0 0 0 14.25 3H7.82l-.65-1.125A1.75 1.75 0 0 0 5.655 1H1.75zM1.5 2.75a.25.25 0 0 1 .25-.25h3.905a.25.25 0 0 1 .216.125L6.954 4.5h7.296a.25.25 0 0 1 .25.25v9.5a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25V2.75z"/></svg>
+                            <p>Create a playlist folder</p>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-2-main">
+                <div class="sec-2-main-1">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button class="sec-2-btn" >Create playlist</button>
+                </div>
+                <div class="sec-2-main-1">
+                    <h4>Let's find some padcast to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="sec-2-btn" >Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="sec-3-top">
+                <p class="pointer">Legal</p>
+                <p class="pointer">Privacy center</p>
+                <p class="pointer">Privacy policy</p>
+                <p class="pointer">Cookies</p>
+                <p class="pointer">About us</p>
+                <p class="pointer">Accesibilty</p>
+                <p class="pointer">About ads</p>
+            </div>
+            <div class="sec-3-btn">
+                <button class="border1 pointer"> <svg class="earth-logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"/></svg><span class="btn-txt" >English</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer pointer">
+        <div class="footer-flex">
+            <div class="footer-text">
+                <p class="Spotify" >Preview of SPOTIFY</p>
+                <P class="bold">Sign up to get unlimited songs and podcasts with ocassional ads. No Credit card needed</P>
+            </div>
+            <div class="footer-button pointer"><button onclick="sign()">Sign up free</button></div>
+        </div>
+    </div>
+</div>
+<div id="sign-in" class="sign-in-page-container">
+    <div class="back-btn">
+        <button onclick="back()" id="back-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg></button>
+    </div>
+    <div class="sign-in-box">
+        <div class="sign-in-box-sec-1">
+            <div class="logo">
+                <svg class="spotify-logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 78 24" aria-label="Spotify" aria-hidden="false" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 fVXtDr"><title>Spotify</title><path d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z"/></svg>
+            </div>
+                <h1>Sign up for free to start listening.</h1>
+                <button class="fb-logo-btn pointer">
+                    <h3 class="btn-content"> <svg  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook-google"><path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg> <span class="fb-logo-text" >Sign up with Facebook</span></h3>
+                </button>
+                <button class="google-logo-btn pointer">
+                    <h3 class="btn-content"><svg id="facebook-google" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 12.2272C21.6 11.5181 21.5364 10.8363 21.4182 10.1818H12V14.0499H17.3818C17.15 15.2999 16.4455 16.359 15.3864 17.0681V19.5772H18.6182C20.5091 17.8363 21.6 15.2727 21.6 12.2272Z" fill="#4285F4"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.9999C14.7 21.9999 16.9636 21.1044 18.6181 19.5772L15.3863 17.0681C14.4909 17.6681 13.3454 18.0226 12 18.0226C9.39542 18.0226 7.19087 16.2635 6.40451 13.8999H3.0636V16.4908C4.70905 19.759 8.09087 21.9999 12 21.9999Z" fill="#34A853"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.40455 13.9001C6.20455 13.3001 6.09091 12.6592 6.09091 12.0001C6.09091 11.341 6.20455 10.7001 6.40455 10.1001V7.50916H3.06364C2.38636 8.85916 2 10.3864 2 12.0001C2 13.6137 2.38636 15.141 3.06364 16.491L6.40455 13.9001Z" fill="#FBBC05"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.97727C13.4681 5.97727 14.7863 6.48182 15.8227 7.47273L18.6909 4.60455C16.9591 2.99091 14.6954 2 12 2C8.09087 2 4.70905 4.24091 3.0636 7.50909L6.40451 10.1C7.19087 7.73636 9.39542 5.97727 12 5.97727Z" fill="#EA4335"/></svg><span class="-google-logo-text" >Sign up with Google</span></h3>
+                </button>
+                <div class="sign-in-box-sec-1-footer">
+                    <div class="left-border"></div>
+                    <div class="OR">or</div>
+                    <div class="right-border"></div>
+                </div>
+        </div>
+        <div class="sign-in-box-sec-2">
+           <div class="block-input">
+            <p>What's your email?</p>
+            <input type="text" class="email" placeholder="Enter your email.">
+            <a href="#">Use phone number instead.</a>
+           </div>
+           <div class="block-input">
+            <p>Create a password</p>
+            <input type="password" class="password" placeholder="Create a password.">
+           </div>
+           <div class="block-input">
+            <p>What should we call you?</p>
+            <input type="text" class="email" placeholder="Enter a profile name.">
+            <p class="profile-text">This appears on your profile.</p>
+           </div>
+           <div class="DOB">
+            <p class="bold">What's your date of birth?</p>
+            <div class="DOB-flex">
+                <div class="flex1">
+                    <p class="flex1-cont1">Year</p>
+                    <input type="text" class="flex-cont2" placeholder="YYYY">
+                </div>
+                <div class="flex2">
+                    <p class="flex2-con1">Month</p>
+                    <select name="flex-cont2" class="flex-cont2">
+                        <option value="Jan">January</option>
+                        <option value="Feb">Febuary</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="July">July</option>
+                        <option value="Aug">August</option>
+                        <option value="Spet">September</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
+                    </select>
+                </div>
+                <div class="flex3">
+                    <p class="flex3-con1">Day</p>
+                    <input type="text" class="flex-cont2" placeholder="YYYY">
+                </div>
+            </div>
+           </div>
+           <div class="gender">
+            <p class="bold">What's your gender?</p>
+            <input type="radio", id = "g1">
+            <label for="g1">Male</label>
+            <input type="radio", id = "g2">
+            <label for="g2">Female</label>
+            <input type="radio", id = "g3">
+            <label for="g3">Non-binary</label>
+            <input type="radio", id = "g4">
+            <label for="g4">Other</label>
+            <input type="radio", id = "g5">
+            <label for="g5">Prefer not to say</label>
+           </div>
+           <div class="select">
+            <input class="s-1" type="checkbox", id = "s1">
+            <label for="s1">I would prefer not to receive marketing messages from Spotify</label>
+            <br>
+            <input class="s-1" type="checkbox", id = "s2">
+            <label for="s2">Share my registration data with Spotify's content providers for marketing purposes.</label>
+           </div>
+        </div>
+        <div class="sign-in-box-sec-3">
+            <p>By clicking on sign-up, you agree to Spotify's <span class="green underline pointer">Terms and Conditions of Use</span>.</p>
+            <p>To learn more about how Spotify collects, uses, shares and protects your personal data, please see <span class="green underline pointer">Spotify's Privacy Policy</span>.</p>
+            <button class="sign-in-page-sign-up">Sign up</button>
+            <h4>Have an account? <span onclick="login()" class="green underline pointer">Log in</span></h4>
+        </div>
+    </div>
+</div>
+<div id="log-in" class="log-in-page-container">
+    <div class="back-btn-log-in">
+        <button onclick="back()" id="back-btn-log-in"><svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg></button>
+    </div>
+    <div class="log-in-nav">
+        <svg class="log-in-spotify-logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 78 24" aria-label="Spotify" aria-hidden="false" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 fVXtDr"><title>Spotify</title><path d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z"/></svg>
+    </div>
+    <div class="log-in-content">
+        <div class="log-in-section-1">
+            <h1>Log in to Spotify</h1>
+            <button class="btn-for-log-in">
+                <h4>
+                    <svg  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook-log-in"><path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg> <span class="fb-logo-text" >Continue with Facebook</span>
+                </h4>
+            </button>
+            <button class="btn-for-log-in">
+                <h4>
+                    <svg id="google-log-in" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 12.2272C21.6 11.5181 21.5364 10.8363 21.4182 10.1818H12V14.0499H17.3818C17.15 15.2999 16.4455 16.359 15.3864 17.0681V19.5772H18.6182C20.5091 17.8363 21.6 15.2727 21.6 12.2272Z" fill="#4285F4"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.9999C14.7 21.9999 16.9636 21.1044 18.6181 19.5772L15.3863 17.0681C14.4909 17.6681 13.3454 18.0226 12 18.0226C9.39542 18.0226 7.19087 16.2635 6.40451 13.8999H3.0636V16.4908C4.70905 19.759 8.09087 21.9999 12 21.9999Z" fill="#34A853"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.40455 13.9001C6.20455 13.3001 6.09091 12.6592 6.09091 12.0001C6.09091 11.341 6.20455 10.7001 6.40455 10.1001V7.50916H3.06364C2.38636 8.85916 2 10.3864 2 12.0001C2 13.6137 2.38636 15.141 3.06364 16.491L6.40455 13.9001Z" fill="#FBBC05"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.97727C13.4681 5.97727 14.7863 6.48182 15.8227 7.47273L18.6909 4.60455C16.9591 2.99091 14.6954 2 12 2C8.09087 2 4.70905 4.24091 3.0636 7.50909L6.40451 10.1C7.19087 7.73636 9.39542 5.97727 12 5.97727Z" fill="#EA4335"/></svg> <span class="fb-logo-text" >Continue with Google</span>
+                </h4>
+            </button>
+            <button class="btn-for-log-in">
+                <h4>
+                    <svg id="apple-log-in" style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16"> <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" fill="white"></path> <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" fill="white"></path> </svg>  <span class="fb-logo-text" >Continue with Apple</span>
+                </h4>
+            </button>
+            <button class="btn-for-log-in">
+                <h4>
+                    <span class="fb-logo-text" >Continue with Apple</span>
+                </h4>
+            </button>
+        </div>
+        <div class="log-in-section-2">
+            <div class="input-log-in">
+                <p>Email or username</p>
+                <input type="text" name="input-box-log-in" id="input-box-log-in" placeholder="Email or Username">
+            </div>
+            <div class="input-log-in">
+                <p>Password</p>
+                <input type="password" name="input-box-log-in" id="input-box-log-in" placeholder="Password">
+                <svg class="password-icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"><path d="M22.207 2.824a1 1 0 1 0-1.414-1.414L17.15 5.053C15.621 4.363 13.92 4 12 4 8.671 4 5.996 5.091 3.742 7.089c-.896.794-2.3 2.353-3.381 4.453L.125 12l.236.458c1.082 2.1 2.485 3.659 3.381 4.453.278.246.562.479.853.697L1.793 20.41a1 1 0 1 0 1.414 1.414l3.126-3.126.003.002 1.503-1.503-.004-.001 1.73-1.73.004.001 1.567-1.567h-.004l4.68-4.681.001.004 1.595-1.595-.002-.003.11-.109.002.002 1.444-1.444-.003-.002 3.248-3.248zM14.884 7.32l-5.57 5.57A4.035 4.035 0 0 1 8.113 10c0-2.23 1.761-4 3.886-4 1.137 0 2.17.506 2.884 1.319zM7.9 14.304l-1.873 1.873a11.319 11.319 0 0 1-.957-.763C4.396 14.818 3.3 13.621 2.387 12c.913-1.62 2.01-2.818 2.683-3.414.519-.46 1.061-.863 1.634-1.204A6.073 6.073 0 0 0 6.113 10c0 1.681.682 3.21 1.786 4.304zm11.568-5.2 1.415-1.415a16.503 16.503 0 0 1 2.756 3.853l.236.458-.236.458c-1.082 2.1-2.485 3.659-3.381 4.453C18.004 18.908 15.328 20 12 20a13.22 13.22 0 0 1-3.08-.348l1.726-1.726c.435.05.886.074 1.354.074 2.833 0 5.037-.907 6.931-2.586.674-.596 1.77-1.793 2.683-3.414a14.515 14.515 0 0 0-2.146-2.896z"></path><path d="M17.843 10.729c-.328 2.755-2.494 4.956-5.24 5.24l5.24-5.24z"></path></svg>
+            </div>
+            <div class="password-forget">
+                <button class="log-in-btn-1">Log in</button>
+                <a class="forget-btn" href="#">Forget your password?</a>
+            </div>
+        </div>
+        <div class="log-in-footer">
+            <p class="log-foot-text">Don't have an account?</p>
+            <a onclick="sign()" class="sign-in-log" href="#">Sign up for Spotify</a>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
